@@ -1,15 +1,13 @@
-texto1 = "banana"
-texto2 = "ananaa"
+class Solution(object):
+    def isAnagram(self, s, t):
+        s = sorted(s)
+        t = sorted(t)
 
-
-s = sorted(texto1)
-t = sorted(texto2)
-
-if texto1 == texto2:
-    print("valid anagram")
-else:
-    print("not valid")
-
+        if s == t:
+            return True
+        else:
+            return False
+             
 """
 242. Valid Anagram
 Given two strings s and t, return true if t is an anagram of s, and false otherwise.
